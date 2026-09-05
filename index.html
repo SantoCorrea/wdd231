@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="WDD 231 Course Page">
+    <meta name="author" content="Gabriel Guilherme Dos Santos Corrêa">
+    <title>WDD 231 Course Page</title>
+
+    <!-- Fonts Links -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Geist+Pixel&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Roboto+Slab:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <!-- CSS Links -->
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/large.css">
+
+    <!-- js Scripts -->
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/date.js" defer></script>
+    <script src="scripts/course.js" defer></script>
+</head>
+<body>
+    <header>
+        <img src="images/code-slash.svg" alt="Code Slash Icon" width="512" height="512">
+        <span>Gabriel Santos Corrêa</span>
+        <button id="ham-btn" class="hamburguer"></button>
+    </header>
+
+    <nav id="nav-bar" class="navigation">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#">Chamber</a></li>
+            <li><a href="#">Final</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <h1>Home</h1>
+        <section class="info">
+            <h2>About Me</h2>
+            <p>My name is Gabriel Guilherme Dos Santos Corrêa, I am 21 years old, and I am currently studying Web Design and Development at BYU-Idaho. I have a strong passion for technology, programming, and web development, and I am always looking for opportunities to expand my knowledge and improve my skills. Outside of technology, I enjoy reading about world history, exercising, and learning about different subjects that help me grow both personally and professionally. I believe in continuous improvement and strive to become better every day by developing new skills, gaining knowledge, and challenging myself to learn something new.</p>     
+        </section>
+
+        <section class="info">
+            <h2>Student Photo</h2>
+            <div class="photo-container">
+                <img src="images/profile-pic.jpg" alt="Profile Picture of Gabriel Guilherme Dos Santos Corrêa" width="300" height="300">
+            </div>
+        </section>
+
+        <section class="course-infor">
+            <h2>Web Certificate Courses</h2>
+
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="All">All</button>
+                <button class="filter-btn" data-filter="CSE">CSE</button>
+                <button class="filter-btn" data-filter="WDD">WDD</button>
+            </div>
+
+            <div id="course-list" class="course-list"></div>
+
+            <p id="total-credits" class="total-credits"></p>
+    </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Gabriel Guilherme Dos Santos Corrêa</p>
+        <p>Last Modification: <span id="last-modified"></span></p>
+    </footer>
+</body>
+</html>
