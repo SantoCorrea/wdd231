@@ -1,0 +1,74 @@
+[
+  {
+    "name": "Bakery Pão Dourado",
+    "address": "Av. Brasil Norte, 1450, Anápolis, GO",
+    "phone": "(62) 3311-4521",
+    "website": "https://paodourado.com.br",
+    "image": "images/bakery-pic.jpg",
+    "membership": 3,
+    "category": "Bakery"
+  },
+  {
+    "name": "Anápolis Motors",
+    "address": "Rua Engenheiro Portela, 320, Anápolis, GO",
+    "phone": "(62) 3324-7890",
+    "website": "https://anapolismotors.com.br",
+    "image": "images/mechanic-pic.jpg",
+    "membership": 2,
+    "category": "Auto Repair"
+  },
+  {
+    "name": "Drugstore Vida Saudável",
+    "address": "Av. Universitária, 980, Anápolis, GO",
+    "phone": "(62) 3225-6634",
+    "website": "https://farmaciavidasaudavel.com.br",
+    "image": "images/drugstore-pic.jpg",
+    "membership": 3,
+    "category": "Pharmacy"
+  },
+  {
+    "name": "Studio Fit Academia",
+    "address": "Rua Santa Terezinha, 210, Anápolis, GO",
+    "phone": "(62) 3210-8845",
+    "website": "https://studiofitanapolis.com.br",
+    "image": "images/gym-pic.jpg",
+    "membership": 1,
+    "category": "Fitness"
+  },
+  {
+    "name": "Coffee Central Anápolis",
+    "address": "Praça Bom Jesus, 55, Anápolis, GO",
+    "phone": "(62) 3222-1198",
+    "website": "https://cafecentralanapolis.com.br",
+    "image": "images/coffee-pic.jpg",
+    "membership": 2,
+    "category": "Cafe"
+  },
+  {
+    "name": "Advocacy Office Corrêa & Silva",
+    "address": "Av. Brasil Sul, 700, Sala 12, Anápolis, GO",
+    "phone": "(62) 3312-9977",
+    "website": "https://correaesilvaadvocacia.com.br",
+    "image": "images/advocacy-pic.jpg",
+    "membership": 3,
+    "category": "Legal Services"
+  },
+  {
+    "name": "Workshop and Building Material Constrular",
+    "address": "Rodovia GO-330, Km 5, Anápolis, GO",
+    "phone": "(62) 3315-4432",
+    "website": "https://constrular.com.br",
+    "image": "images/workshop-pic.jpg",
+    "membership": 1,
+    "category": "Hardware Store"
+  },
+  {
+    "name": "Pet Shop Amigo Fiel",
+    "address": "Rua Engenheiro Portela, 88, Anápolis, GO",
+    "phone": "(62) 3220-5567",
+    "website": "https://amigofielpetshop.com.br",
+    "image": "images/pet-pic.jpg",
+    "membership": 2,
+    "category": "Pet Store"
+  }
+]

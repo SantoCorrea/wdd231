@@ -1,0 +1,156 @@
+:root {
+    font-family: 'Josefin Sans', sans-serif;
+
+    /* Main colors */
+    --primary-color: #FF6B35;      
+    --secondary-color: #004E64;    
+    --accent-color: #FFD23F;       
+ 
+}
+
+/*---------- Header css -------------*/
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding:  8px 16px;
+    background-color: var(--secondary-color);
+}
+
+header img {
+    display: block;
+    width: 100px;
+    height: auto;
+    padding: 10px;
+}
+
+header span {
+    font-family: 'Geist Pixel', sans-serif;
+    font-size: 1.5rem;
+    color: var(--primary-color);
+}
+
+/*---------- hamburger menu -------------*/
+
+.hamburguer {
+    display: none;
+}
+
+/*---------- Navigation css -------------*/
+
+.navigation ul {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    max-width: 600px;
+    background-color: var(--secondary-color);
+}
+
+.navigation a {
+    display: block;
+    padding: 8px 16px;
+    color: white;
+    text-decoration: none;
+}
+
+.navigation a:hover {
+    background-color: var(--primary-color);
+}
+
+
+/*---------- Main css -------------*/
+
+main {
+    max-width: 1100px;
+    margin: 30px auto;
+    padding: 0 20px;
+}
+
+.view-toggle {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.view-toggle button {
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    background-color: var(--secondary-color);
+    color: white;
+    cursor: pointer;
+}
+
+.view-toggle button:hover {
+    background-color: var(--primary-color);
+}
+
+.member-card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 15px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+}
+
+.member-card img {
+    width: 100%;
+    max-width: 200px;
+    border-radius: 4px;
+}
+
+.member-card h3 {
+    color: var(--secondary-color);
+    margin: 8px 0 4px;
+}
+
+.membership-level {
+    display: inline-block;
+    margin-top: 8px;
+    padding: 4px 10px;
+    border-radius: 12px;
+    background-color: var(--accent-color);
+    font-size: 0.85rem;
+}
+
+#directory.grid-view {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+}
+
+#directory.list-view {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#directory.list-view .member-card {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+#directory.list-view .member-card img {
+    max-width: 100px;
+}
+
+/*---------- Footer css -------------*/
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: var(--secondary-color);
+    color: white;
+    font-size: 0.85rem;
+}
+
+footer p {
+    margin: 4px 0;
+}
+
+

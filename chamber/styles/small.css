@@ -1,0 +1,57 @@
+@media only screen and (max-width: 550px) {
+
+    header {
+        flex-wrap: wrap;
+    }
+
+    .hamburguer {
+        margin-left: auto;
+        margin-top: -25px;
+        display: block;
+        width: 30px;
+        height: 3px;
+        background-color: var(--primary-color);
+        border: none;
+        cursor: pointer;
+        box-shadow: 0 -8px var(--primary-color), 0 8px var(--primary-color);
+    }
+
+    .navigation {
+        width: 100%;
+        order: 3;
+    }
+
+    .navigation ul {
+        flex-direction: column;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.3s ease;
+    }
+
+    .navigation ul.show {
+        max-height: 300px;
+    }
+
+    .navigation a {
+        border-top: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    /*---------- Main css -------------*/
+
+    main {
+        padding: 0 12px;
+    }
+
+    .view-toggle {
+        justify-content: center;
+    }
+
+    #directory.grid-view {
+        grid-template-columns: 1fr;
+    }
+
+    #directory.list-view .member-card {
+        flex-direction: column;
+        text-align: center;
+    }
+}
