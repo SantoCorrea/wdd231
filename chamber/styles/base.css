@@ -153,4 +153,147 @@ footer p {
     margin: 4px 0;
 }
 
+/*---------- Hero -------------*/
+
+.hero {
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.hero-img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 8px;
+}
+
+.cta-btn {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    background-color: var(--primary-color);
+    color: white;
+    padding: 12px 24px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+}
+
+.cta-btn:hover {
+    background-color: var(--accent-color);
+    color: var(--secondary-color);
+}
+
+/*---------- Events -------------*/
+
+.events {
+    margin-bottom: 30px;
+}
+
+.events h2 {
+    color: var(--secondary-color);
+    margin-bottom: 10px;
+}
+
+.events-list {
+    list-style: none;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 15px;
+}
+
+.events-list li {
+    border-left: 4px solid var(--primary-color);
+    background-color: #f7f7f7;
+    padding: 12px 16px;
+    border-radius: 4px;
+}
+
+.events-list h3 {
+    color: var(--secondary-color);
+    margin-bottom: 4px;
+}
+
+/*---------- Weather -------------*/
+
+.weather {
+    margin-bottom: 30px;
+}
+
+.weather h2 {
+    color: var(--secondary-color);
+    margin-bottom: 10px;
+}
+
+.current-weather {
+    margin-bottom: 12px;
+}
+
+#current-temp {
+    font-size: 2rem;
+    font-weight: bold;
+    color: var(--secondary-color);
+}
+
+#current-desc {
+    text-transform: capitalize;
+    color: #636e72;
+}
+
+.forecast {
+    display: flex;
+    gap: 15px;
+}
+
+.forecast-card {
+    flex: 1;
+    text-align: center;
+    background-color: #f7f7f7;
+    border-radius: 8px;
+    padding: 12px;
+}
+
+.forecast-day {
+    font-weight: bold;
+    color: var(--secondary-color);
+}
+
+.forecast-desc {
+    text-transform: capitalize;
+    font-size: 0.85rem;
+    color: #636e72;
+}
+
+/*---------- Spotlights -------------*/
+
+.spotlights h2 {
+    color: var(--secondary-color);
+    margin-bottom: 15px;
+}
+
+.spotlights {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+}
+
+.spotlights h2 {
+    grid-column: 1 / -1;
+}
+
+.spotlight-card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 15px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+    text-align: center;
+}
+
+.spotlight-card img {
+    width: 100%;
+    max-width: 150px;
+    margin-bottom: 8px;
+}
 

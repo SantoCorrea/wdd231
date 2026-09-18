@@ -16,7 +16,7 @@
     margin: .3rem 0;
 }
 
-card #temperature {
+.card #temperature {
     font-size: 2rem;
     color: #537279;
     margin: .3rem 0;

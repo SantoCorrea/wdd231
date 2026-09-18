@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <meta name="description" content="Anápolis Chamber of Commerce - Home Page">
+    <meta name="author" content="Gabriel Guilherme Dos Santos Corrêa">
+
+    <!-- Link to JavaScript -->
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/footer.js" defer></script>
+    <script src="scripts/weather.js" defer></script>
+    <script src="scripts/spotlights.js" defer></script>
+
+    <!-- Link to Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Geist+Pixel&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Roboto+Slab:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <!-- Link to CSS -->
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/small.css">
+
+    <!-- Favicon -->
+    <link rel="icon" href="images/favicon.ico">
+
+    <!-- Facebook Meta Tags -->
+    <meta property="og:title" content="Anápolis Chamber of Commerce - Home">
+    <meta property="og:description" content="Welcome to the Anápolis Chamber of Commerce, Goiás, Brazil.">
+    <meta property="og:image" content="https://santocorrea.github.io/wdd231/chamber/images/anapolis-chamber-og.jpg">
+    <meta property="og:url" content="https://santocorrea.github.io/wdd231/chamber/index.html">
+    <meta property="og:type" content="website">
+</head>
+<body>
+   <header>
+    <img src="images/brightness-high-fill.svg" alt="Anápolis Chamber of Commerce Logo" width="512" height="512">
+    <span>Anápolis Chamber of Commerce</span>
+    <button id="ham-btn" class="hamburguer"></button>
+
+    <nav id="nav-bar" class="navigation">
+    <ul>
+        <li><a href="/chamber/index.html">Home</a></li>
+        <li><a href="/chamber/directory.html">Directory</a></li>
+        <li><a href="/chamber/join.html">Join</a></li>
+        <li><a href="/chamber/discover.html">Discover</a></li>
+    </ul>
+   </nav>
+   </header>
+
+   <main>
+
+    <!-- HERO -->
+    <section class="hero">
+        <img src="/chamber/images/hero-anapolis.jpg" alt="Downtown Anápolis, Goiás" class="hero-img">
+        <a href="join.html" class="cta-btn">Join the Chamber</a>
+    </section>
+
+    <!-- CURRENT EVENTS -->
+    <section class="events">
+        <h2>Upcoming Events</h2>
+        <ul class="events-list">
+            <li>
+                <h3>Business Networking Breakfast</h3>
+                <p>Oct 3, 2026 — 8:00 AM · Chamber Main Hall</p>
+            </li>
+            <li>
+                <h3>Anápolis Small Business Expo</h3>
+                <p>Oct 18, 2026 — 9:00 AM · Centro de Convenções</p>
+            </li>
+            <li>
+                <h3>Chamber Members Annual Gala</h3>
+                <p>Nov 14, 2026 — 7:00 PM · Hotel Castro's Park</p>
+            </li>
+        </ul>
+    </section>
+
+    <!-- WEATHER -->
+    <section class="weather">
+        <h2>Anápolis Weather</h2>
+        <div class="current-weather">
+            <p id="current-temp"></p>
+            <p id="current-desc"></p>
+        </div>
+        <div id="forecast" class="forecast"></div>
+    </section>
+
+    <!-- SPOTLIGHTS -->
+    <section id="spotlights" class="spotlights">
+        <h2>Member Spotlights</h2>
+    </section>
+
+   </main>
+
+   <footer>
+    <p>&copy; <span id="year"></span> Anápolis Chamber of Commerce</p>
+    <p>Gabriel Guilherme Dos Santos Corrêa</p>
+    <p>WDD 231</p>
+    <p>Last Modified: <span id="lastModified"></span></p>
+   </footer>
+</body>
+</html>

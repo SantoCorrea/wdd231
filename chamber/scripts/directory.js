@@ -4,6 +4,12 @@ async function getMembers() {
     displayMembers(members);
 }
 
+function membershipLabel(level) {
+    if (level === 3) return 'Gold';
+    if (level === 2) return 'Silver';
+    return 'Non-Profit';
+}
+
 function displayMembers(members) {
     const directory = document.querySelector('#directory');
     directory.innerHTML = '';
@@ -19,7 +25,7 @@ function displayMembers(members) {
             <p>${member.address}</p>
             <p>${member.phone}</p>
             <a href="${member.website}" target="_blank">Visit Website</a>
-            <span class="membership-level">Level: ${member.membership}</span>
+            <span class="membership-level">Level: ${membershipLabel(member.membership)}</span>
         `;
 
         directory.appendChild(card);
