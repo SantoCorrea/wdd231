@@ -94,6 +94,12 @@ function displayCourses(courseArray) {
         }
 
         card.textContent = `${course.subject} ${course.number}`;
+        card.tabIndex = 0;
+        card.setAttribute('role', 'button');
+        card.addEventListener('click', () => displayCourseDetails(course));
+        card.addEventListener('keydown', (e) => {
+            if (e.key === 'Enter') displayCourseDetails(course);
+        });
         courseList.appendChild(card);
     });
 

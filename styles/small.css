@@ -216,3 +216,58 @@ footer p {
     font-size: 0.85rem;
     color: #555;
 }
+
+/*--------- course modal ---------*/
+
+.course-card {
+    cursor: pointer;
+}
+
+.course-card:hover {
+    background-color: darkgray;
+}
+
+#course-details {
+    width: calc(100% - 20px);
+    max-width: 500px;
+    padding: 0 0 15px;
+    border: solid 1px #ddd;
+    border-radius: 4px;
+    background-color: #eee;
+    color: #333;
+}
+
+#course-details::backdrop {
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+#course-details h2 {
+    margin: 0;
+    padding: 10px 40px;
+    text-align: center;
+    font-size: 1.5rem;
+    background-color: #a09b9b;
+}
+
+#course-details h3 {
+    margin: 15px 15px 0;
+    font-size: 1.2rem;
+    color: #1f1f1f;
+}
+
+#course-details p {
+    margin: 10px 15px 0;
+    line-height: 1.4;
+}
+
+.modal-close {
+    position: absolute;
+    top: 6px;
+    right: 8px;
+    border: none;
+    background: none;
+    font-size: 2rem;
+    line-height: 1;
+    color: #333;
+    cursor: pointer;
+}

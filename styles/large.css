@@ -80,4 +80,16 @@
         margin: 4px 10px;
     }
 
+    /*--------- course modal ---------*/
+
+    #course-details {
+        padding-bottom: 20px;
+    }
+
+    #course-details h3,
+    #course-details p {
+        margin-left: 25px;
+        margin-right: 25px;
+    }
+
 }
