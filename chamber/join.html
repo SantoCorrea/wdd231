@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Join | Anápolis Chamber of Commerce</title>
+    <meta name="description" content="Apply for membership with the Anápolis Chamber of Commerce">
+    <meta name="author" content="Gabriel Guilherme Dos Santos Corrêa">
+
+    <!-- Link to JavaScript -->
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/footer.js" defer></script>
+    <script src="scripts/join.js" defer></script>
+
+    <!-- Link to Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Geist+Pixel&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Roboto+Slab:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <!-- Link to CSS -->
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/small.css">
+
+    <!-- Favicon -->
+    <link rel="icon" href="images/favicon.ico">
+
+    <!-- Facebook Meta Tags -->
+    <meta property="og:title" content="Anápolis Chamber of Commerce - Join">
+    <meta property="og:description" content="Apply for membership with the Anápolis Chamber of Commerce, Goiás, Brazil.">
+    <meta property="og:image" content="https://santocorrea.github.io/wdd231/chamber/images/anapolis-chamber-og.jpg">
+    <meta property="og:url" content="https://santocorrea.github.io/wdd231/chamber/join.html">
+    <meta property="og:type" content="website">
+</head>
+<body>
+   <header>
+    <img src="images/brightness-high-fill.svg" alt="Anápolis Chamber of Commerce Logo" width="512" height="512">
+    <span>Anápolis Chamber of Commerce</span>
+    <button id="ham-btn" class="hamburguer"></button>
+
+    <nav id="nav-bar" class="navigation">
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="directory.html">Directory</a></li>
+        <li><a href="join.html" aria-current="page">Join</a></li>
+        <li><a href="discover.html">Discover</a></li>
+    </ul>
+   </nav>
+   </header>
+
+   <main>
+
+    <section class="join-intro">
+        <h1>Join the Chamber</h1>
+        <p>Fill out the application below and our team will reach out within two business days to confirm your membership level and next steps.</p>
+    </section>
+
+    <div class="join-layout">
+
+        <form action="thankyou.html" method="get" class="join-form">
+
+            <label for="fname">First Name
+                <input type="text" id="fname" name="fname" title="Your first name" autocomplete="given-name" required>
+            </label>
+
+            <label for="lname">Last Name
+                <input type="text" id="lname" name="lname" title="Your last name" autocomplete="family-name" required>
+            </label>
+
+            <label for="orgtitle">Title (within your organization)
+                <input type="text" id="orgtitle" name="orgtitle" title="Letters, hyphens and spaces only, minimum 7 characters" autocomplete="organization-title" pattern="[A-Za-z\-\s]{7,}">
+            </label>
+
+            <label for="email">Email Address
+                <input type="email" id="email" name="email" title="Your email address" autocomplete="email" placeholder="name@example.com" required>
+            </label>
+
+            <label for="phone">Mobile Phone
+                <input type="tel" id="phone" name="phone" title="Your mobile phone number" autocomplete="tel" required>
+            </label>
+
+            <label for="orgname">Business/Organization Name
+                <input type="text" id="orgname" name="orgname" title="Your business or organization's name" autocomplete="organization" required>
+            </label>
+
+            <label for="level">Membership Level
+                <select id="level" name="level" title="Choose a membership level">
+                    <option value="np">NP Membership</option>
+                    <option value="bronze">Bronze Membership</option>
+                    <option value="silver">Silver Membership</option>
+                    <option value="gold">Gold Membership</option>
+                </select>
+            </label>
+
+            <label for="description">Business/Organization Description
+                <textarea id="description" name="description" title="Briefly describe your business or organization"></textarea>
+            </label>
+
+            <input type="hidden" name="timestamp" id="timestamp">
+
+            <input type="submit" value="Submit Application">
+
+        </form>
+
+        <div class="membership-cards">
+
+            <div class="member-level-card">
+                <h3>NP Membership</h3>
+                <p>For registered non-profit organizations.</p>
+                <a href="#np-modal" data-modal="np-modal">Learn more</a>
+            </div>
+
+            <div class="member-level-card">
+                <h3>Bronze Membership</h3>
+                <p>Entry-level membership for small businesses.</p>
+                <a href="#bronze-modal" data-modal="bronze-modal">Learn more</a>
+            </div>
+
+            <div class="member-level-card">
+                <h3>Silver Membership</h3>
+                <p>Growing businesses ready for more visibility.</p>
+                <a href="#silver-modal" data-modal="silver-modal">Learn more</a>
+            </div>
+
+            <div class="member-level-card">
+                <h3>Gold Membership</h3>
+                <p>Full benefits and top placement for established members.</p>
+                <a href="#gold-modal" data-modal="gold-modal">Learn more</a>
+            </div>
+
+        </div>
+
+    </div>
+
+   </main>
+
+   <!-- Membership modals -->
+   <dialog id="np-modal" class="membership-modal">
+        <h2>NP Membership Benefits</h2>
+        <ul>
+            <li>No membership fee</li>
+            <li>Listing in the online directory</li>
+            <li>Access to member networking events</li>
+        </ul>
+        <button class="close-modal">Close</button>
+   </dialog>
+
+   <dialog id="bronze-modal" class="membership-modal">
+        <h2>Bronze Membership Benefits</h2>
+        <ul>
+            <li>Everything in NP Membership</li>
+            <li>Discounted event tickets</li>
+            <li>Monthly newsletter feature</li>
+        </ul>
+        <button class="close-modal">Close</button>
+   </dialog>
+
+   <dialog id="silver-modal" class="membership-modal">
+        <h2>Silver Membership Benefits</h2>
+        <ul>
+            <li>Everything in Bronze Membership</li>
+            <li>Priority event registration</li>
+            <li>One free training workshop per year</li>
+        </ul>
+        <button class="close-modal">Close</button>
+   </dialog>
+
+   <dialog id="gold-modal" class="membership-modal">
+        <h2>Gold Membership Benefits</h2>
+        <ul>
+            <li>Everything in Silver Membership</li>
+            <li>Home page spotlight rotation</li>
+            <li>Unlimited training workshops</li>
+            <li>Dedicated account contact</li>
+        </ul>
+        <button class="close-modal">Close</button>
+   </dialog>
+
+   <footer>
+    <p>&copy; <span id="year"></span> Anápolis Chamber of Commerce</p>
+    <p>Gabriel Guilherme Dos Santos Corrêa</p>
+    <p>WDD 231</p>
+    <p>Last Modified: <span id="lastModified"></span></p>
+   </footer>
+</body>
+</html>

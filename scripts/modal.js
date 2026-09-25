@@ -19,4 +19,3 @@ courseDetails.addEventListener('click', (event) => {
         courseDetails.close();
     }
 });
- 

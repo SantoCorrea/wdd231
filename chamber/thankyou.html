@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thank You | Anápolis Chamber of Commerce</title>
+    <meta name="description" content="Thank you for applying to the Anápolis Chamber of Commerce">
+    <meta name="author" content="Gabriel Guilherme Dos Santos Corrêa">
+
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/footer.js" defer></script>
+    <script src="scripts/thankyou.js" defer></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Geist+Pixel&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Roboto+Slab:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/join.css">
+    <link rel="stylesheet" href="styles/small.css">
+
+    <link rel="icon" href="images/favicon.ico">
+</head>
+<body>
+   <header>
+    <img src="images/brightness-high-fill.svg" alt="Anápolis Chamber of Commerce Logo" width="512" height="512">
+    <span>Anápolis Chamber of Commerce</span>
+    <button id="ham-btn" class="hamburguer"></button>
+
+    <nav id="nav-bar" class="navigation">
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="directory.html">Directory</a></li>
+        <li><a href="join.html">Join</a></li>
+        <li><a href="discover.html">Discover</a></li>
+    </ul>
+   </nav>
+   </header>
+
+   <main>
+        <section class="thankyou">
+            <h1>Thank you for applying!</h1>
+            <p>We've received your application and will be in touch soon. Here's what you submitted:</p>
+
+            <dl class="submission-summary">
+                <dt>First Name</dt>
+                <dd id="out-fname"></dd>
+
+                <dt>Last Name</dt>
+                <dd id="out-lname"></dd>
+
+                <dt>Email</dt>
+                <dd id="out-email"></dd>
+
+                <dt>Mobile Phone</dt>
+                <dd id="out-phone"></dd>
+
+                <dt>Business/Organization Name</dt>
+                <dd id="out-orgname"></dd>
+
+                <dt>Submitted On</dt>
+                <dd id="out-timestamp"></dd>
+            </dl>
+        </section>
+   </main>
+
+   <footer>
+    <p>&copy; <span id="year"></span> Anápolis Chamber of Commerce</p>
+    <p>Gabriel Guilherme Dos Santos Corrêa</p>
+    <p>WDD 231</p>
+    <p>Last Modified: <span id="lastModified"></span></p>
+   </footer>
+</body>
+</html>

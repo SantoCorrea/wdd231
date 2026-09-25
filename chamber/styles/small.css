@@ -79,4 +79,20 @@
     .spotlights {
         grid-template-columns: 1fr;
     }
+
+        /*---------- Join / Thank you -------------*/
+
+    .join-layout {
+        flex-direction: column;
+    }
+
+    .join-form,
+    .membership-cards {
+        flex: initial;
+    }
+
+    .membership-modal {
+        max-width: 320px;
+        padding: 16px;
+    }
 }
