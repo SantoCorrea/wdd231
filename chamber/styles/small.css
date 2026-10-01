@@ -95,4 +95,28 @@
         max-width: 320px;
         padding: 16px;
     }
+
+    .discover-grid {
+        grid-template-columns: 1fr;
+        gap: 16px;
+        grid-template-areas:
+            "c1"
+            "c2"
+            "c3"
+            "c4"
+            "c5"
+            "c6"
+            "c7"
+            "c8";
+    }
+
+    .visit-message {
+        padding: 10px 12px;
+    }
+
+    
+    .discover-card img:hover {
+        transform: none;
+        filter: none;
+    }
 }
