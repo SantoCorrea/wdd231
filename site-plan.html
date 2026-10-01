@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Site plan for Pot &amp; Pantry, a recipe catalog website.">
+<meta name="author" content="Gabriel Guilherme Dos Santos Corrêa">
+<title>Site Plan | Pot &amp; Pantry</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bitter:wght@600;700&family=Nunito+Sans:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles/site-plan.css">
+</head>
+<body>
+<header>
+  <h1>Pot &amp; Pantry: Site Plan</h1>
+  <p>Individual project by Gabriel Guilherme Dos Santos Corrêa</p>
+</header>
+<main>
+  <section id="site-name">
+    <h2>Site Name</h2>
+    <p><strong>Pot &amp; Pantry</strong></p>
+    <p>The name combines cooking (the pot) with ingredients on hand (the pantry). It tells visitors the site is about everyday home cooking and is short and easy to remember.</p>
+    <p>Optional domain availability: potandpantry.com</p>
+  </section>
+
+  <section id="purpose">
+    <h2>Site Purpose</h2>
+    <p>Pot &amp; Pantry is a recipe catalog where visitors can browse, filter and save recipes. The site has three pages: a home page with featured recipes, a catalog page that loads at least 15 recipes from a JSON file, and a contact page with a form for sending recipe suggestions. Each recipe shows an image, category, preparation time, difficulty and ingredients, and opens in an accessible modal with full details. Visitors can mark favorites, which are stored in the browser.</p>
+  </section>
+
+  <section id="scenarios">
+    <h2>Scenarios</h2>
+    <ul>
+      <li>What can I cook for dinner in under 30 minutes?</li>
+      <li>Which recipes are good for beginners?</li>
+      <li>How do I save the recipes I want to try again later?</li>
+      <li>How can I suggest a recipe to the site?</li>
+    </ul>
+  </section>
+
+  <section id="colors">
+    <h2>Color Scheme</h2>
+    <table>
+      <thead><tr><th>Color</th><th>Hex</th><th>Where it is used</th></tr></thead>
+      <tbody>
+        <tr><td><span class="swatch sw-green"></span>Herb green</td><td>#2F5D3A</td><td>Header and footer backgrounds, main headings, table headers</td></tr>
+        <tr><td><span class="swatch sw-saffron"></span>Saffron</td><td>#E8A33D</td><td>Accents: underlines, borders, buttons on hover</td></tr>
+        <tr><td><span class="swatch sw-tomato"></span>Tomato</td><td>#C8432B</td><td>Links, subheadings, call-to-action buttons</td></tr>
+        <tr><td><span class="swatch sw-paper"></span>Light sage</td><td>#F5F7F2</td><td>Page background and text on dark areas</td></tr>
+        <tr><td><span class="swatch sw-ink"></span>Dark ink</td><td>#1E2A22</td><td>Paragraph text and footer</td></tr>
+      </tbody>
+    </table>
+  </section>
+
+  <section id="typography">
+    <h2>Typography</h2>
+    <h3>Bitter (serif, 600 and 700)</h3>
+    <p>Used for the site name, page titles and all headings. It feels warm and readable, like a printed cookbook.</p>
+    <h3>Nunito Sans (sans-serif, 400 and 700)</h3>
+    <p>Used for body text, navigation, recipe details, ingredient lists and form labels. It is clean and easy to read on small screens.</p>
+  </section>
+
+  <section id="wireframe">
+    <h2>Wireframe</h2>
+    <p>Black and white sketches of the home page. The small view stacks everything in one column with a hamburger menu. The large view uses a horizontal navigation bar and a three-column grid of recipe cards.</p>
+    <div class="wire">
+      <figure>
+        <img src="images/diagram-small.png" alt="Hand-drawn wireframe of the home page on a small screen">
+        <figcaption>Small viewport (mobile)</figcaption>
+      </figure>
+      <figure>
+        <img src="images/diagram-large.png" alt="Hand-drawn wireframe of the home page on a large screen">
+        <figcaption>Large viewport (desktop/tablet)</figcaption>
+      </figure>
+    </div>
+  </section>
+</main>
+<footer>
+  <p>&copy; <span id="year"></span> Gabriel Guilherme Dos Santos Corrêa | WDD Site Plan</p>
+</footer>
+<script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+</body>
+</html>
